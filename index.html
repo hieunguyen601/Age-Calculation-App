@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Age calculator app</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="info-section">
+      <div class="day-section">
+        <label for="day">DAY</label>
+        <input placeholder="DD" type="number" max="31" id="day" name="day" required>
+        <p class="invalid-day"></p>
+      </div>
+      
+      <div class="month-section">
+        <label for="month">MONTH</label>
+        <input placeholder="MM" type="number" max="12" id="month" name="month" required>
+        <p class="invalid-month"></p>
+      </div>
+
+      <div class="year-section">
+        <label for="year">YEAR</label>
+        <input placeholder="YYYY" type="number" id="year" name="year" required>
+        <p class="invalid-year"></p>
+      </div>
+    </div>
+    <div class="calculated-section">
+      <p class="year-age"><span class="year-number">--</span> years</p>
+      <p class="month-age"><span class="month-number">--</span> months</p>
+      <p class="day-age"><span class="day-number">--</span> days</p>
+    </div>
+
+    <button class="calculate-button">Calculate</button>
+
+    <button class="reset-button">Reset</button>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Henry Nguyen</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

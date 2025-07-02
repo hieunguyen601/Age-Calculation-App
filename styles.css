@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    background-color: rgb(169, 167, 167);
+}
+
+.main-container {
+    width: 900px;
+    background-color: white;
+    height: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+    position: relative;
+}
+
+.info-section {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+
+.day-section, .month-section, .year-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    color: rgb(90, 90, 90);
+}
+
+#day, #month, #year {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    
+}
+
+.calculated-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 90px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.year-number, .month-number, .day-number {
+    color: rgb(105, 31, 180);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+}
+
+.calculate-button {
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: rgb(105, 31, 180);
+    color: white;
+    position: absolute;
+    top: 90px;
+    right: 70px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.calculate-button:hover, .reset-button:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+}
+
+.calculate-button:active, .reset-button:active {
+    opacity: 0.8;
+}
+
+.invalid-day, .invalid-month, .invalid-year {
+    color: rgb(239, 74, 74);
+    font-style: italic;
+    font-size: 18px;
+}
+
+.reset-button {
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: rgb(105, 31, 180);
+    color: white;
+    position: absolute;
+    top: 220px;
+    right: 70px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
